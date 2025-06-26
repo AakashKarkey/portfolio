@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useRef, useState, useEffect } from "react";
 import emailjs from "@emailjs/browser";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -6,40 +6,43 @@ import "react-toastify/dist/ReactToastify.css";
 const Contact = () => {
   const form = useRef();
   const [isSent, setIsSent] = useState(false);
+  const [isSending, setIsSending] = useState(false);
+
+  useEffect(() => {
+    if (isSent) {
+      const timer = setTimeout(() => setIsSent(false), 5000);
+      return () => clearTimeout(timer);
+    }
+  }, [isSent]);
 
   const sendEmail = (e) => {
     e.preventDefault();
+    setIsSending(true);
 
     emailjs
       .sendForm(
-        "service_gad63ag",       // Your EmailJS Service ID
-        "template_b6gg4hy",      // Your EmailJS Template ID
+        "service_gad63ag",
+        "template_b6gg4hy",
         form.current,
-        "pTqN-K5il0zixPvq4"     // Your EmailJS Public Key
+        "pTqN-K5il0zixPvq4"
       )
       .then(
         () => {
           setIsSent(true);
-          form.current.reset(); // Reset form fields after sending
+          setIsSending(false);
+          form.current.reset();
           toast.success("Message sent successfully! ✅", {
             position: "top-right",
             autoClose: 3000,
-            hideProgressBar: false,
-            closeOnClick: true,
-            pauseOnHover: true,
-            draggable: true,
             theme: "dark",
           });
         },
         (error) => {
+          setIsSending(false);
           console.error("Error sending message:", error);
           toast.error("Failed to send message. Please try again.", {
             position: "top-right",
             autoClose: 3000,
-            hideProgressBar: false,
-            closeOnClick: true,
-            pauseOnHover: true,
-            draggable: true,
             theme: "dark",
           });
         }
@@ -51,10 +54,8 @@ const Contact = () => {
       id="contact"
       className="flex flex-col items-center justify-center py-24 px-[12vw] md:px-[7vw] lg:px-[20vw]"
     >
-      {/* Toast Container */}
       <ToastContainer />
 
-      {/* Section Title */}
       <div className="text-center mb-16">
         <h2 className="text-4xl font-bold text-white">CONTACT</h2>
         <div className="w-32 h-1 bg-purple-500 mx-auto mt-4"></div>
@@ -63,7 +64,6 @@ const Contact = () => {
         </p>
       </div>
 
-      {/* Contact Form */}
       <div className="mt-8 w-full max-w-md bg-[#0d081f] p-6 rounded-lg shadow-lg border border-gray-700">
         <h3 className="text-xl font-semibold text-white text-center">
           Connect With Me <span className="ml-1">🚀</span>
@@ -99,12 +99,16 @@ const Contact = () => {
             className="w-full p-3 rounded-md bg-[#131025] text-white border border-gray-600 focus:outline-none focus:border-purple-500"
           />
 
-          {/* Send Button */}
           <button
             type="submit"
-            className="w-full bg-gradient-to-r from-purple-600 to-pink-500 py-3 text-white font-semibold rounded-md hover:opacity-90 transition"
+            disabled={isSending}
+            className={`w-full py-3 text-white font-semibold rounded-md transition ${
+              isSending
+                ? "bg-purple-400 cursor-not-allowed"
+                : "bg-gradient-to-r from-purple-600 to-pink-500 hover:opacity-90"
+            }`}
           >
-            Send
+            {isSending ? "Sending..." : "Send"}
           </button>
         </form>
       </div>
