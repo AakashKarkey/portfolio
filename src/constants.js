@@ -49,6 +49,7 @@ import img4 from './assets/project_logo/4.png';
 import ach1 from './assets/achievements_logo/1.png';
 import ach2 from './assets/achievements_logo/2.png';
 import ach3 from './assets/achievements_logo/3.png';
+import ach4 from './assets/achievements_logo/4.png'
 
 
 
@@ -64,8 +65,8 @@ export const SkillsInfo = [
       { name: 'Next JS', logo: nextjsLogo },
       { name: 'Tailwind CSS', logo: tailwindcssLogo },
       { name: 'React Native', logo: reactnativeLogo }, // ✅ Fixed here
-      { name: 'Material UI', logo: materialuiLogo },
-      { name: 'Bootstrap', logo: bootstrapLogo },
+      // { name: 'Material UI', logo: materialuiLogo },
+      // { name: 'Bootstrap', logo: bootstrapLogo },
     ],
   },
   {
@@ -219,6 +220,12 @@ export const achievements = [
     description:
       "Won first position in project competition during IT Mela organized by Aryan School of Engineering and Management.",
   },
+   {
+    id: 4,
+    title: " Winner – House Model Competition by Skill Sewa",
+    image: ach4,
+    description: "Secured first place with a commercial hotel model featuring IoT and Bluetooth-based LED lighting, showcasing smart, energy-efficient design and modern tech integration",
+  },
   {
     id: 3,
     title: "IT Club President",
@@ -226,4 +233,5 @@ export const achievements = [
     description:
       "Serving as the President of the IT Club at Aryan School of Engineering and Management, leading training, events, and student development.",
   },
+
 ];
