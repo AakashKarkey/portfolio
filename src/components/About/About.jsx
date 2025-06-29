@@ -90,7 +90,7 @@ const About = () => {
   return (
     <section
       id="about"
-      className="py-16 px-4 md:px-10 lg:px-20 font-sans mt-20 md:mt-28 lg:mt-32"
+      className="py-16 px-4 md:px-10 lg:px-20 font-sans mt-20 md:mt-20 lg:mt-0"
     >
       <div className="max-w-screen-xl mx-auto flex flex-col-reverse md:flex-row items-center justify-between gap-10">
         {/* Left Section */}
