@@ -61,12 +61,11 @@ export const SkillsInfo = [
       { name: 'CSS', logo: cssLogo },
       { name: 'JavaScript', logo: javascriptLogo },
       { name: 'React JS', logo: reactjsLogo },
-      { name: 'Redux', logo: reduxLogo },
+      // { name: 'Redux', logo: reduxLogo },
       { name: 'Next JS', logo: nextjsLogo },
       { name: 'Tailwind CSS', logo: tailwindcssLogo },
-      { name: 'React Native', logo: reactnativeLogo }, // ✅ Fixed here
-      // { name: 'Material UI', logo: materialuiLogo },
-      // { name: 'Bootstrap', logo: bootstrapLogo },
+      { name: 'React Native', logo: reactnativeLogo }, 
+      
     ],
   },
   {
@@ -109,7 +108,7 @@ export const SkillsInfo = [
  export const experiences = [
   {
     id: 0,
-    img: newtonschoolLogo, // Replace with Nobel internship logo if available
+    img: newtonschoolLogo, 
     role: "Nobel Intern",
     company: "Nobel Internship Program",
     date: "May 2025 - Present",
@@ -130,7 +129,7 @@ export const SkillsInfo = [
   export const education = [
   {
     id: 0,
-    img: vpsLogo, // Replace with actual logo of Aryan School if available
+    img: vpsLogo, 
     school: "Aryan School of Engineering and Management",
     location: "Mid-Baneshwor, Kathmandu",
     date: "2021 - Present",
@@ -141,7 +140,7 @@ export const SkillsInfo = [
   },
   {
     id: 1,
-    img: bsaLogo, // Replace with logo of St. Lawrence College if available
+    img: bsaLogo, 
     school: "St. Lawrence College",
     location: "Chabahil, Kathmandu",
     date: "Graduated (2019 - 2021)",
@@ -151,7 +150,7 @@ export const SkillsInfo = [
   },
   {
     id: 2,
-    img: glaLogo, // Replace with logo of Bal Sirjanalaya Secondary School if available
+    img: glaLogo, 
     school: "Bal Sirjanalaya Secondary School",
     location: "Aarubari, Kathmandu",
     date: "Graduated 2075 BS (2019 AD)",
@@ -224,7 +223,7 @@ export const achievements = [
     id: 4,
     title: " Winner – House Model Competition by Skill Sewa",
     image: ach4,
-    description: "Secured first place with a commercial hotel model featuring IoT and Bluetooth-based LED lighting, showcasing smart, energy-efficient design and modern tech integration",
+    description: "Secured first place with a commercial hotel model featuring IoT and Bluetooth-based LED lighting, showcasing smart, energy-efficient design and modern tech integration.",
   },
   {
     id: 3,
