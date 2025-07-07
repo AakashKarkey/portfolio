@@ -9,6 +9,7 @@ import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
 import BlurBlob from './components/BlurBlob';
 import Achievements from "./components/Achievements/Achievements";
+import Artworks from "./components/Artworks/Artworks";
 
 const App = () => {
   useEffect(() => {
@@ -29,6 +30,7 @@ const App = () => {
         <Work />
         <Education />
         <Achievements />
+        <Artworks />
         <Contact />
         <Footer />
       </div>
