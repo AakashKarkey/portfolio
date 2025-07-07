@@ -31,9 +31,8 @@ import postgreLogo from './assets/tech_logo/postgre.png';
 import canvaLogo from './assets/tech_logo/canva.png';
 
 // Experience Section Logo's
-import webverseLogo from './assets/company_logo/webverse_logo.png';
-import agcLogo from './assets/company_logo/agc_logo.png';
 import newtonschoolLogo from './assets/company_logo/newtonschool_logo.png';
+import cozywearsLogo from './assets/company_logo/cozy.png';
 
 // Education Section Logo's
 import glaLogo from './assets/education_logo/gla_logo.png';
@@ -124,6 +123,16 @@ export const SkillsInfo = [
       "Teamwork",
     ],
   },
+  {
+  id: 2,
+  company: "Cozy Wears",
+  img: cozywearsLogo,
+  role: "Founder",
+  date: "April 205 - Present",
+  desc: "Founded and built CozyWears, a modern clothing brand focused on premium streetwear and comfort. Managed branding, web development, and social media strategy.",
+  skills: ["Entrepreneurship", "Branding", "E-commerce", "React", "Tailwind", "Marketing"]
+},
+
 ];
 
 
