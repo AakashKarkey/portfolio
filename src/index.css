@@ -24,15 +24,24 @@ html {
       }
   }
   
-@keyframes marquee {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-50%);
-  }
+
+.slider-wrapper {
+  overflow: hidden;
+  width: 100%;
 }
 
-.animate-marquee {
-  animation: marquee 5s linear infinite;
+
+.slider-track {
+  display: flex;
+  width: calc(200%); 
+  animation: marquee 20s linear infinite;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
 }
