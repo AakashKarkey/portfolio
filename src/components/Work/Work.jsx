@@ -1,6 +1,3 @@
-
-
-
 import React, { useState } from "react";
 import { projects } from "../../constants";
 
@@ -111,7 +108,7 @@ const Work = () => {
                 </div>
 
                 {/* View Code / Live Buttons (Optional) */}
-                {/* <div className="flex gap-4">
+                <div className="flex gap-4">
                   <a
                     href={selectedProject.github}
                     target="_blank"
@@ -120,15 +117,15 @@ const Work = () => {
                   >
                     View Code
                   </a>
-                  <a
+                  {/* <a
                     href={selectedProject.webapp}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="w-1/2 bg-purple-600 hover:bg-purple-800 text-white px-4 py-2 rounded-xl text-sm font-semibold text-center"
                   >
                     View Live
-                  </a>
-                </div> */}
+                  </a> */}
+                </div>
               </div>
             </div>
           </div>

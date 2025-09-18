@@ -45,6 +45,7 @@ import img1 from "./assets/project_logo/1.png";
 import img2 from "./assets/project_logo/2.png";
 import img3 from "./assets/project_logo/3.png";
 import img4 from "./assets/project_logo/4.png";
+import img5 from "./assets/project_logo/gpt.png";
 
 //Achievements Section Logo's
 import ach1 from "./assets/achievements_logo/1.png";
@@ -194,14 +195,13 @@ export const education = [
 export const projects = [
   {
     id: 0,
-    title: "Iguide - Guide Booking System",
-    description:
-      "A MERN stack web application that allows users to find and book local travel guides. Features include user authentication, guide profiles, booking management, and real-time chat to enhance travel planning.",
-    image: img1,
-    tags: ["MongoDB", "Express.js", "React JS", "Node.js", "REST API"],
-    github: "https://github.com/yourgithubusername/iguide",
-    webapp: "https://iguide.yourdomain.com",
+    title: "GetPaidTasks",
+    description: "Tasks that Verify AI Models",
+    image: img5,
+    tags: ["React Native", "Redux Toolkit"],
+    // github: "https://github.com/yourgithubusername/getpaidtasks"
   },
+
   {
     id: 1,
     title: "Khana Khajana - Recipe Finder App",
@@ -209,8 +209,8 @@ export const projects = [
       "A React Native mobile app that helps users search and discover recipes based on ingredients, cuisine, and dietary preferences. Uses PostgreSQL as backend database and features offline caching and user favorites.",
     image: img2,
     tags: ["React Native", "PostgreSQL", "REST API", "Expo"],
-    github: "https://github.com/yourgithubusername/khana-khajana",
-    webapp: "",
+    // github: "https://github.com/yourgithubusername/khana-khajana",
+    // webapp: "",
   },
   {
     id: 2,
@@ -219,8 +219,8 @@ export const projects = [
       "A comprehensive hotel management system built with Java. Manages room bookings, billing, and staff workflows with a user-friendly interface.",
     image: img3,
     tags: ["Java", "MySQL", "Swing", "OOP"],
-    github: "https://github.com/yourgithubusername/hotel-management-system",
-    webapp: "",
+    github: "https://github.com/AakashKarkey/Hotel-Management-System",
+    // webapp: "",
   },
   {
     id: 3,
@@ -229,8 +229,19 @@ export const projects = [
       "An embedded system project using microcontrollers to control Up-Down counting mechanisms for industrial applications. Implemented using C and interfaced with LCD for real-time display.",
     image: img4,
     tags: ["C", "Microcontroller", "Embedded Systems"],
-    github: "https://github.com/yourgithubusername/ud-down-controller",
-    webapp: "",
+    github: "https://github.com/AakashKarkey/updowncounter-8051microcontroller",
+    // webapp: "",
+  },
+
+  {
+    id: 4,
+    title: "Iguide - Guide Booking System",
+    description:
+      "A MERN stack web application that allows users to find and book local travel guides. Features include user authentication, guide profiles, booking management, and real-time chat to enhance travel planning.",
+    image: img1,
+    tags: ["MongoDB", "Express.js", "React JS", "Node.js", "REST API"],
+    github: "https://github.com/AakashKarkey/Iguide",
+    // webapp: "https://iguide.yourdomain.com",
   },
 ];
 
