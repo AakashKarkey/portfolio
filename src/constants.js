@@ -131,8 +131,11 @@ export const experiences = [
     role: "React Native Developer Intern",
     company: "Zion Tech Firm Pvt. Ltd.",
     date: "Jul 2025 - Nov 2025",
-    desc: "Building and maintaining cross-platform mobile applications using React Native, ensuring smooth performance, responsive design, and excellent user experience. Collaborating with designers, backend developers, and QA teams to deliver high-quality features on time. Integrating APIs, managing state with Redux Toolkit, and optimizing app performance for Android and iOS platforms",
+    desc: "Building and maintaining mobile applications using Kotlin/Java, React Native, ensuring smooth performance, responsive design, and excellent user experience. Collaborating with designers, backend developers, and QA teams to deliver high-quality features on time. Integrating APIs, managing state with Redux Toolkit, and optimizing app performance for Android and iOS platforms",
     skills: [
+      "Kotlin",
+      "Java",
+      "XML",
       "React Native",
       "Redux Toolkit",
       "JavaScript (ES6+)",
