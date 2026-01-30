@@ -34,6 +34,7 @@ import canvaLogo from "./assets/tech_logo/canva.png";
 import newtonschoolLogo from "./assets/company_logo/newtonschool_logo.png";
 import cozywearsLogo from "./assets/company_logo/cozy.png";
 import zionLogo from "./assets/company_logo/zion.jfif";
+import citytechlogo from "./assets/company_logo/citytechlogo.jpeg"
 
 // Education Section Logo's
 import glaLogo from "./assets/education_logo/gla_logo.png";
@@ -105,12 +106,31 @@ export const SkillsInfo = [
 ];
 
 export const experiences = [
-  {
+   {
     id: 0,
+    img:  citytechlogo,
+    role: "Software Engineer Intern",
+    company: "City Tech",
+    date: "Jan 2025 - Present",
+    
+    desc: "Working on fintech applications using Kotlin/Java, XML, and MVVM architecture.",
+    skills: [
+      "Kotlin",
+      "Java",
+      "XML",
+      "MVVM",
+      "RESTful APIs",
+      "Navigation",
+      "Git & GitHub",
+      "Unit Testing ",
+    ],
+  },
+  {
+    id: 1,
     img: zionLogo,
     role: "React Native Developer Intern",
     company: "Zion Tech Firm Pvt. Ltd.",
-    date: "Jul 2025 - Present",
+    date: "Jul 2025 - Nov 2025",
     desc: "Building and maintaining cross-platform mobile applications using React Native, ensuring smooth performance, responsive design, and excellent user experience. Collaborating with designers, backend developers, and QA teams to deliver high-quality features on time. Integrating APIs, managing state with Redux Toolkit, and optimizing app performance for Android and iOS platforms",
     skills: [
       "React Native",
