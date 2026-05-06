@@ -109,7 +109,7 @@ export const experiences = [
    {
     id: 0,
     img:  citytechlogo,
-    role: "Software Engineer Intern",
+    role: "Software Engineer",
     company: "City Tech",
     date: "Jan 2025 - Present",
     
