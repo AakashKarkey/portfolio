@@ -119,6 +119,8 @@ export const experiences = [
       "Java",
       "XML",
       "MVVM",
+      "Clean Architecture",
+      "MQTT",
       "RESTful APIs",
       "Navigation",
       "Git & GitHub",
