@@ -7,7 +7,7 @@ import angularLogo from "./assets/tech_logo/angular.png";
 import reduxLogo from "./assets/tech_logo/redux.png";
 import nextjsLogo from "./assets/tech_logo/nextjs.png";
 import tailwindcssLogo from "./assets/tech_logo/tailwindcss.png";
-import reactnativeLogo from "./assets/tech_logo/reactnative.png"; // ✅ Fixed name
+import reactnativeLogo from "./assets/tech_logo/reactnative.png"; 
 import materialuiLogo from "./assets/tech_logo/materialui.png";
 import bootstrapLogo from "./assets/tech_logo/bootstrap.png";
 import nodejsLogo from "./assets/tech_logo/nodejs.png";
